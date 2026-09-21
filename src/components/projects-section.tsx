@@ -19,7 +19,7 @@ const projects = [
     title: "fox movie - Movie search app",
     description:
       "A movie search app that allows users to discover and explore their favorite films. The app features a sleek interface and comprehensive database of movies with detailed information.",
-    url: "https://fox-movie.netlify.app/",
+    url: "https://fox-movies-app.netlify.app/",
     technologies: ["React", "TMDB API", "Tailwind CSS"],
   },
   
