@@ -9,19 +9,20 @@ const projects = [
     technologies: ["Next js", "tailwind css", "Framer Motion", "Vercel"],
   },
   {
-    title: "Fox Movies app",
+    title: "Fly News - News article summarizer",
     description:
-      "A movie discovery app that allows users to browse and search for movies, view details, and manage their watchlist. The app is built using React and Tailwind CSS, and is optimized for performance and accessibility.",
-    url: "https://fox-movies-app.netlify.app/",
-    technologies: ["React", "Styled components", "TMDB API", "Netlify"],
+      "A news article summarizer that helps users quickly get the essence of long articles. The platform uses natural language processing to extract key points and generate concise summaries.",
+    url: "https://fly-news.netlify.app/",
+    technologies: ["React", "Node.js", "Express", "MongoDB"],
   },
   {
-    title: "Kanban task manager",
+    title: "fox movie - Movie search app",
     description:
-      "A task management platform that helps users organize their various task in to categories of To Do, In Progress, and Done. Users can create multiple boards for different projects, add tasks with due dates and labels.",
-    url: "https://kanban-tasker.netlify.app/",
-    technologies: ["React", "Redux Toolkit", "Tailwind CSS", "Node.js", "Express", "MongoDB"],
+      "A movie search app that allows users to discover and explore their favorite films. The app features a sleek interface and comprehensive database of movies with detailed information.",
+    url: "https://fox-movie.netlify.app/",
+    technologies: ["React", "TMDB API", "Tailwind CSS"],
   },
+  
   
 ]
 
