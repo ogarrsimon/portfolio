@@ -2,11 +2,11 @@ import { Badge } from "@radix-ui/themes"
 import { LuArrowUpRight } from "react-icons/lu";
 const projects = [
   {
-    title: "Gud Ai'dea - Campaing website",
+    title: "Nettrix Digital",
     description:
-      "A campaign website for Gud Ai'dea, a startup that provides solutions for businesses. The website features a clean and modern design, with sections for showcasing the company's products, services, and team. The website is built using React and Tailwind CSS, and is optimized for performance and accessibility.",
-    url: "https://gud-aidia.netlify.app/",
-    technologies: ["Next js", "tailwind css", "Framer Motion", "Vercel"],
+      "A digital marketing agency website that showcases their services and portfolio. The website is built with a modern design and focuses on user experience and conversion optimization.",
+    url: "https://net-trix-i3h7.vercel.app/",
+    technologies: ["React", "Tailwind CSS", "Framer Motion"],
   },
   {
     title: "Fly News - News article summarizer",
@@ -14,6 +14,13 @@ const projects = [
       "A news article summarizer that helps users quickly get the essence of long articles. The platform uses natural language processing to extract key points and generate concise summaries.",
     url: "https://fly-news.netlify.app/",
     technologies: ["React", "Node.js", "Express", "MongoDB"],
+  },
+  {
+    title: "Gud Ai'dea - Campaing website",
+    description:
+      "A campaign website for Gud Ai'dea, a startup that provides solutions for businesses. The website features a clean and modern design, with sections for showcasing the company's products, services, and team. The website is built using React and Tailwind CSS, and is optimized for performance and accessibility.",
+    url: "https://gud-aidia.netlify.app/",
+    technologies: ["Next js", "tailwind css", "Framer Motion", "Vercel"],
   },
   {
     title: "fox movie - Movie search app",
