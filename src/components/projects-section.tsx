@@ -1,6 +1,5 @@
 import { Badge } from "@radix-ui/themes"
 import { LuArrowUpRight } from "react-icons/lu";
-import foreignExchangeImage from "../assets/foreign-exchange.jpg";
 const projects = [
   {
     title: "Fx Checker - Foreign exchange rate checker",
@@ -8,7 +7,6 @@ const projects = [
       "A foreign exchange rate checker that allows users to check the latest exchange rates for different currencies. The platform provides real-time data and historical trends, making it easy for users to make informed decisions.",
     url: "https://foreign-exc.netlify.app/",
     technologies: ["React", "tailwind css",],
-    img: foreignExchangeImage
   },
   {
     title: "Fly News - News article summarizer",
@@ -24,15 +22,6 @@ const projects = [
     url: "https://gud-aidia.netlify.app/",
     technologies: ["Next js", "tailwind css", "Framer Motion", "Vercel"],
   },
-  {
-    title: "fox movie - Movie search app",
-    description:
-      "A movie search app that allows users to discover and explore their favorite films. The app features a sleek interface and comprehensive database of movies with detailed information.",
-    url: "https://fox-movies-app.netlify.app/",
-    technologies: ["React", "TMDB API", "Tailwind CSS"],
-  },
-  
-  
 ]
 
 export function ProjectsSection() {
@@ -54,19 +43,6 @@ export function ProjectsSection() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                {/* Project image */}
-                {
-                  project.img && (
-                    <div className="overflow-hidden rounded-md">
-                      <img
-                        src={project.img}
-                        alt={`${project.title} preview`}
-                        className="h-48 w-full object-cover transition-transform duration-300 group-hover:scale-105"
-                        loading="lazy"/>
-                    </div>)
-                }
-                
-
                 <div className="z-10 flex p-4 lg:p-6 flex-col gap-2">
                   <h3 className="font-medium leading-snug text-foreground">
                     <span className="inline-flex items-baseline gap-1 text-base transition-colors">
