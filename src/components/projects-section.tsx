@@ -1,12 +1,14 @@
 import { Badge } from "@radix-ui/themes"
 import { LuArrowUpRight } from "react-icons/lu";
+import foreignExchangeImage from "../assets/foreign-exchange.jpg";
 const projects = [
   {
-    title: "Nettrix Digital",
+    title: "Fx Checker - Foreign exchange rate checker",
     description:
-      "A digital marketing agency website that showcases their services and portfolio. The website is built with a modern design and focuses on user experience and conversion optimization.",
-    url: "https://net-trix-i3h7.vercel.app/",
-    technologies: ["React", "Tailwind CSS", "Framer Motion"],
+      "A foreign exchange rate checker that allows users to check the latest exchange rates for different currencies. The platform provides real-time data and historical trends, making it easy for users to make informed decisions.",
+    url: "https://foreign-exc.netlify.app/",
+    technologies: ["React", "tailwind css",],
+    img: foreignExchangeImage
   },
   {
     title: "Fly News - News article summarizer",
@@ -44,23 +46,39 @@ export function ProjectsSection() {
       <div>
         <ol className="group/list flex flex-col gap-3">
           {projects.map((project) => (
+            
             <li key={project.title} className="group">
               <a
                 href={project.url}
-                className="relative flex flex-col gap-4 rounded-lg p-4 transition-all lg:p-6 bg-card/80"
+                className="relative flex flex-col gap-4 rounded-lg transition-all bg-card/80"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <div className="z-10 flex flex-col gap-2">
+                {/* Project image */}
+                {
+                  project.img && (
+                    <div className="overflow-hidden rounded-md">
+                      <img
+                        src={project.img}
+                        alt={`${project.title} preview`}
+                        className="h-48 w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                        loading="lazy"/>
+                    </div>)
+                }
+                
+
+                <div className="z-10 flex p-4 lg:p-6 flex-col gap-2">
                   <h3 className="font-medium leading-snug text-foreground">
-                    <span className="inline-flex items-baseline gap-1 text-base group-hover/list:group-hover:text-primary transition-colors">
+                    <span className="inline-flex items-baseline gap-1 text-base transition-colors">
                       {project.title}
                       <LuArrowUpRight className="ml-1 inline-block size-4 shrink-0 translate-y-px transition-transform group-hover:-translate-y-1 group-hover:translate-x-1" />
                     </span>
                   </h3>
+
                   <p className="text-sm leading-relaxed text-muted-foreground">
                     {project.description}
                   </p>
+
                   <ul className="mt-2 flex flex-wrap gap-2" aria-label="Technologies used">
                     {project.technologies.map((tech) => (
                       <li key={tech}>
