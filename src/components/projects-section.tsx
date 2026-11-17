@@ -2,10 +2,17 @@ import { Badge } from "@radix-ui/themes"
 import { LuArrowUpRight } from "react-icons/lu";
 const projects = [
   {
-    title: "Fx Checker - Foreign exchange rate checker",
+    title: "Gud Ai'dea - Campaing website",
     description:
-      "A foreign exchange rate checker that allows users to check the latest exchange rates for different currencies. The platform provides real-time data and historical trends, making it easy for users to make informed decisions.",
-    url: "https://foreign-exc.netlify.app/",
+      "A campaign website for Gud Ai'dea, a startup that provides solutions for businesses. The website features a clean and modern design, with sections for showcasing the company's products, services, and team. The website is built using React and Tailwind CSS, and is optimized for performance and accessibility.",
+    url: "https://gud-aidia.netlify.app/",
+    technologies: ["Next js", "tailwind css", "Framer Motion", "Vercel"],
+  },
+  {
+    title: "Nettrix - A tech agency website",
+    description:
+      "A website for a tech agency that showcases their services, portfolio, and team. The site features a modern design and is built with React and Tailwind CSS.",
+    url: "https://net-trix-i3h7.vercel.app/",
     technologies: ["React", "tailwind css",],
   },
   {
@@ -14,13 +21,6 @@ const projects = [
       "A news article summarizer that helps users quickly get the essence of long articles. The platform uses natural language processing to extract key points and generate concise summaries.",
     url: "https://fly-news.netlify.app/",
     technologies: ["React", "Node.js", "Express", "MongoDB"],
-  },
-  {
-    title: "Gud Ai'dea - Campaing website",
-    description:
-      "A campaign website for Gud Ai'dea, a startup that provides solutions for businesses. The website features a clean and modern design, with sections for showcasing the company's products, services, and team. The website is built using React and Tailwind CSS, and is optimized for performance and accessibility.",
-    url: "https://gud-aidia.netlify.app/",
-    technologies: ["Next js", "tailwind css", "Framer Motion", "Vercel"],
   },
 ]
 
